@@ -121,7 +121,7 @@ export const projects = [
     liveLink: null,
     category: "Real-time · Full Stack",
     icon: <FaNodeJs size={24} className="text-accent-1" />,
-    image: "https://placehold.co/800x500/0f172a/22d3ee?text=Let's+Chat",
+    image: "/letschat.png",
   },
   {
     title: "Expense Tracker",
