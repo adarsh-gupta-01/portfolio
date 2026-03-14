@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion as Motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaChevronDown, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaChevronDown, FaEnvelope, FaFileAlt } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { personalInfo } from "../data/portfolioData";
 
@@ -165,6 +165,15 @@ const Hero = () => {
           transition={{ delay: 0.7 }}
           className="mt-8 flex flex-wrap items-center justify-center gap-3"
         >
+          <a
+            href={personalInfo.resumeLink}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-text-secondary/30 text-text-primary text-sm font-medium hover:border-accent-1 hover:text-accent-1 transition-all duration-300"
+          >
+            <FaFileAlt size={16} />
+            Resume
+          </a>
           <a
             href={personalInfo.leetcode}
             target="_blank"
